@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>ARCADE GAME</h1>
+    </div>
+    
+    <div class="overlay"></div>
+
+    <!-- modal for starting the game -->
+    <div class="start-game">
+        <h1>Welcome to the Arcade Game</h1>
+        <h3>Guids</h3>
+        <p>To Play use arrow Keys:Up,Down,Right,Left to move player.
+            pay attention player shouldn't collide with the bugs. You loose 50pts on any collison.</p>
+        <h3>Challenge</h3>
+        <p>Try to get to the water blocks at the top and gain 5 keys to win game.</p>
+        <h4>you have 3 lives to Win</h4>
+        <button onclick="startGame()"> Play </button>
+    </div>
+
+    <!-- modal for when player looses all lives -->
+    <div class="game-over">
+        <h1>Game Over</h1>
+        <p> Done!</p>
+        <p>Ooops you lost all 3 lives</p>
+        <h3>Try to Play again to win</h3>
+        <button onclick="resetGame()"> Play Again </button>
+    </div>
+
+    <!-- Modal for when player wins the game -->
+    <div class="winner">
+        <h1>Winner .. </h1>
+        <h3>Play Again</h3>
+        <button onclick="resetGame()"> Play Again </button>
+    </div>
+    <!--File Tp java Script-->
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
